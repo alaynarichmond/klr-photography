@@ -1,8 +1,10 @@
 import React from 'react';
+import Photogrid from './Photogrid'
 
-const Overview = () => (
+const Overview = ({ images }) => (
   <div>
     <p>Overview</p>
+    <Photogrid images={images}/>
   </div>
 );
 
