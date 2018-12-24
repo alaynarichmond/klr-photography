@@ -4,7 +4,7 @@ import { fromJS } from 'immutable'
 import createHistory from 'history/createHashHistory'
 import { syncHistoryWithStore } from 'react-router-redux'
 
-import routes from './routes'
+import Routes from './Routes'
 import Root from './Root'
 import configureStore from './redux/configureStore'
 
@@ -32,6 +32,6 @@ const history = syncHistoryWithStore(hashHistory, store)
 // Render the React application to the DOM
 // Root component is to bootstrap Provider, Router and DevTools
 ReactDOM.render(
-  <Root history={history} routes={routes} store={store} />,
+  <Root history={history} routes={<Routes/>} store={store} />,
   document.getElementById('app-container')
 )

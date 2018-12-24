@@ -83,6 +83,7 @@
     "webpack-s3-plugin": "^1.0.0-rc.0"
   },
   "dependencies": {
+    "@material-ui/core": "^3.7.1",
     "history": "^4.7.2",
     "immutable": "^4.0.0-rc.12",
     "npm-check-updates": "^2.15.0",

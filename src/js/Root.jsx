@@ -9,22 +9,14 @@ export default class Root extends Component {
     store: PropTypes.object.isRequired,
   }
 
-  get content() {
-    const { routes } = this.props
-
-    return (
-      <Router>
-        {routes}
-      </Router>
-    )
-  }
-
   render() {
-    const { store } = this.props
+    const { store, routes } = this.props
 
     return (
       <Provider store={store}>
-        {this.content}
+        <Router>
+          {routes}
+        </Router>
       </Provider>
     )
   }
